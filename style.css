@@ -74,17 +74,13 @@ h1{
     padding:25px;
     margin-bottom:25px;
 
-    box-shadow:
-        0 0 10px rgba(255,0,0,0.15);
-
+    box-shadow:0 0 10px rgba(255,0,0,0.15);
     transition:0.3s;
 }
 
 .card:hover{
     transform:translateY(-3px);
-
-    box-shadow:
-        0 0 20px rgba(255,0,0,0.25);
+    box-shadow:0 0 20px rgba(255,0,0,0.25);
 }
 
 /* =========================
@@ -137,18 +133,15 @@ li::marker{
     display:inline-block;
     background:#ff0000;
     color:#ffffff;
-
     padding:8px 14px;
     margin:5px;
-
     border-radius:20px;
-
     font-size:13px;
     font-weight:bold;
 }
 
 /* =========================
-   LINKS
+   GENERAL LINKS
    ========================= */
 
 a{
@@ -169,13 +162,13 @@ a:hover{
 }
 
 .query-link a{
-    color:#ffffff;      /* White */
+    color:#ffffff !important;
     text-decoration:none;
     font-weight:bold;
 }
 
 .query-link a:hover{
-    color:#ff4d4d;      /* Red on hover */
+    color:#ff4d4d !important;
 }
 
 /* =========================
@@ -195,14 +188,10 @@ img{
 
 .resume-btn{
     display:inline-block;
-
     background:#ff0000;
     color:#ffffff;
-
     padding:12px 20px;
-
     border-radius:6px;
-
     font-weight:bold;
 }
 
