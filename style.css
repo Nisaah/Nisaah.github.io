@@ -1,121 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bahjath Nisa | Cybersecurity Portfolio</title>
+body{
+    background:#050505;
+    color:#ffffff;
+    font-family:Consolas, monospace;
+}
 
-    <link rel="stylesheet" href="style.css">
-</head>
+h1,h2{
+    color:#ff0000;
+    text-shadow:0 0 10px #ff0000;
+}
 
-<body>
+.card{
+    background:#101010;
+    border:1px solid #ff0000;
+    border-radius:10px;
+    padding:20px;
+    margin:20px 0;
+    box-shadow:0 0 15px rgba(255,0,0,0.3);
+}
 
-<div class="hero">
-    <h1>Bahjath Nisa</h1>
-    <p>SOC Analyst | Cybersecurity Enthusiast | Splunk SIEM</p>
-</div>
+.hero{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
 
-<div class="card">
-    <h2>👨‍💻 About Me</h2>
-
-    <p>
-        Cybersecurity enthusiast with hands-on experience in SOC monitoring,
-        Splunk SIEM, Windows Security Logs, Sysmon, and threat detection.
-        Currently seeking SOC Analyst opportunities in the UAE.
-    </p>
-</div>
-
-<div class="card">
-    <h2>🛡 Splunk Enterprise SOC Detection & Incident Response Lab</h2>
-
-    <p>
-        Built a SOC monitoring lab using Splunk Enterprise to collect,
-        analyze, and investigate Windows Security and Sysmon logs.
-    </p>
-
-    <h3>✅ Completed Activities</h3>
-
-    <ul>
-        <li>Splunk Enterprise Installation</li>
-        <li>Dedicated Index Creation (soc_lab)</li>
-        <li>Windows Event Log Collection</li>
-        <li>Sysmon Installation & Integration</li>
-        <li>Splunk Universal Forwarder Configuration</li>
-    </ul>
-
-    <h3>🚨 Security Detections Implemented</h3>
-
-    <ul>
-        <li>Multiple Failed Login Detection (Event ID 4625)</li>
-        <li>Successful Login After Multiple Failed Attempts</li>
-    </ul>
-
-    <h3>🛠 Technologies Used</h3>
-
-    <span class="badge">Splunk Enterprise</span>
-    <span class="badge">Sysmon</span>
-    <span class="badge">Universal Forwarder</span>
-    <span class="badge">Windows Event Logs</span>
-    <span class="badge">SPL</span>
-
-    <h3>🎯 MITRE ATT&CK Mapping</h3>
-
-    <span class="badge">T1110</span>
-    <span class="badge">T1078</span>
-</div>
-
-<div class="card">
-    <h2>💡 Technical Skills</h2>
-
-    <span class="badge">SOC Analysis</span>
-    <span class="badge">Splunk</span>
-    <span class="badge">Threat Detection</span>
-    <span class="badge">Incident Response</span>
-    <span class="badge">Sysmon</span>
-    <span class="badge">Windows Security</span>
-    <span class="badge">CCNA</span>
-    <span class="badge">Networking</span>
-</div>
-
-<div class="card">
-    <h2>📸 Project Screenshots</h2>
-
-    <p>
-        Upload screenshots and replace the filenames below.
-    </p>
-
-    <img src="failed_login_detection.png" width="100%">
-    <br><br>
-
-    <img src="successful_login_detection.png" width="100%">
-    <br><br>
-
-    <img src="sysmon_logs.png" width="100%">
-</div>
-
-<div class="card">
-    <h2>📄 Resume</h2>
-
-    <p>
-        <a href="resume.pdf" target="_blank">Download Resume</a>
-    </p>
-</div>
-
-<div class="card">
-    <h2>📬 Contact</h2>
-
-    <p>
-        GitHub: <a href="https://github.com/Nisaah" target="_blank">github.com/Nisaah</a>
-    </p>
-
-    <p>
-        LinkedIn: Add your LinkedIn profile link here
-    </p>
-
-    <p>
-        Email: Add your professional email here
-    </p>
-</div>
-
-</body>
-</html>
+.badge{
+    display:inline-block;
+    background:#ff0000;
+    color:white;
+    padding:8px 15px;
+    border-radius:20px;
+    margin:5px;
+}
