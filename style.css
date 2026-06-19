@@ -164,14 +164,18 @@ a:hover{
    DETECTION QUERY LINK
    ========================= */
 
+.query-link{
+    margin-top:15px;
+}
+
 .query-link a{
-    color:#ff4d4d;
+    color:#ffffff;      /* White */
     text-decoration:none;
     font-weight:bold;
 }
 
 .query-link a:hover{
-    color:#ffffff;
+    color:#ff4d4d;      /* Red on hover */
 }
 
 /* =========================
