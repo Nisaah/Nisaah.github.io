@@ -9,27 +9,37 @@
 }
 
 body{
-    background:#000000 !important;
+    background:#000000;
     color:#ffffff;
     font-family:Consolas, "Courier New", monospace;
-    padding:20px;
-    margin:0;
     line-height:1.8;
+    padding:20px;
 
     background-image:
-    radial-gradient(circle at top right,
-    rgba(255,0,0,0.15),
-    transparent 40%),
-    linear-gradient(rgba(255,0,0,0.08) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,0,0,0.08) 1px, transparent 1px);
+    radial-gradient(
+        circle at top right,
+        rgba(255,0,0,0.15),
+        transparent 40%
+    ),
+    linear-gradient(
+        rgba(255,0,0,0.08) 1px,
+        transparent 1px
+    ),
+    linear-gradient(
+        90deg,
+        rgba(255,0,0,0.08) 1px,
+        transparent 1px
+    );
 
     background-size:
-    auto,
-    50px 50px,
-    50px 50px;
+        auto,
+        50px 50px,
+        50px 50px;
 }
 
-/* Hero Section */
+/* =========================
+   HERO SECTION
+   ========================= */
 
 .hero{
     text-align:center;
@@ -38,29 +48,24 @@ body{
     border-bottom:1px solid #ffffff;
 }
 
-/* Name */
-
 h1{
     color:#ff4d4d;
     font-size:3rem;
     font-weight:700;
     letter-spacing:2px;
     text-transform:uppercase;
-    margin-bottom:25px;
-    text-shadow:none;
+    margin-bottom:20px;
 }
-
-/* Subtitle */
 
 .hero p{
     color:#ffffff;
     font-size:1.1rem;
     letter-spacing:1px;
-    line-height:1.8;
-    margin:0;
 }
 
-/* Cards */
+/* =========================
+   CARDS
+   ========================= */
 
 .card{
     background:#0d0d0d;
@@ -69,17 +74,22 @@ h1{
     padding:25px;
     margin-bottom:25px;
 
-    box-shadow:0 0 10px rgba(255,0,0,0.15);
+    box-shadow:
+        0 0 10px rgba(255,0,0,0.15);
 
     transition:0.3s;
 }
 
 .card:hover{
     transform:translateY(-3px);
-    box-shadow:0 0 20px rgba(255,0,0,0.25);
+
+    box-shadow:
+        0 0 20px rgba(255,0,0,0.25);
 }
 
-/* Headings */
+/* =========================
+   HEADINGS
+   ========================= */
 
 h2{
     color:#ff4d4d;
@@ -91,16 +101,20 @@ h2{
 h3{
     color:#ffffff;
     margin-top:20px;
-    margin-bottom:10px;
+    margin-bottom:12px;
 }
 
-/* Paragraph */
+/* =========================
+   TEXT
+   ========================= */
 
 p{
     color:#dddddd;
 }
 
-/* Lists */
+/* =========================
+   LISTS
+   ========================= */
 
 ul{
     padding-left:25px;
@@ -115,20 +129,27 @@ li::marker{
     color:#ff4d4d;
 }
 
-/* Badges */
+/* =========================
+   BADGES
+   ========================= */
 
 .badge{
     display:inline-block;
     background:#ff0000;
     color:#ffffff;
+
     padding:8px 14px;
     margin:5px;
+
     border-radius:20px;
+
     font-size:13px;
     font-weight:bold;
 }
 
-/* Links */
+/* =========================
+   LINKS
+   ========================= */
 
 a{
     color:#ff4d4d;
@@ -139,7 +160,27 @@ a:hover{
     color:#ffffff;
 }
 
-/* Images */
+/* =========================
+   DETECTION QUERY LINK
+   ========================= */
+
+.query-link{
+    margin-top:15px;
+}
+
+.query-link a{
+    color:#ff4d4d;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.query-link a:hover{
+    color:#ffffff;
+}
+
+/* =========================
+   IMAGES
+   ========================= */
 
 img{
     width:100%;
@@ -148,14 +189,20 @@ img{
     margin-top:10px;
 }
 
-/* Resume Button */
+/* =========================
+   RESUME BUTTON
+   ========================= */
 
 .resume-btn{
     display:inline-block;
+
     background:#ff0000;
     color:#ffffff;
+
     padding:12px 20px;
+
     border-radius:6px;
+
     font-weight:bold;
 }
 
@@ -163,7 +210,9 @@ img{
     background:#cc0000;
 }
 
-/* Footer */
+/* =========================
+   FOOTER
+   ========================= */
 
 footer{
     text-align:center;
