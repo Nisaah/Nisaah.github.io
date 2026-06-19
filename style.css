@@ -164,10 +164,6 @@ a:hover{
    DETECTION QUERY LINK
    ========================= */
 
-.query-link{
-    margin-top:15px;
-}
-
 .query-link a{
     color:#ff4d4d;
     text-decoration:none;
