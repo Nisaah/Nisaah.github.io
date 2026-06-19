@@ -1,3 +1,28 @@
+/* =========================
+   CYBERSECURITY PORTFOLIO
+   ========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color:#050505;
+    color:#ffffff;
+    font-family:Consolas, "Courier New", monospace;
+    line-height:1.8;
+    padding:20px;
+
+    /* Cyber Grid Background */
+    background-image:
+    linear-gradient(rgba(255,0,0,0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,0,0,0.08) 1px, transparent 1px);
+
+    background-size:50px 50px;
+}
+
 /* Hero Section */
 
 .hero{
@@ -7,26 +32,135 @@
     border-bottom:1px solid #ffffff;
 }
 
-/* Bahjath Nisa */
+/* Name */
 
 h1{
-    color:#ff4d4d;         /* RED */
+    color:#ff4d4d;
     font-size:3rem;
     font-weight:700;
     letter-spacing:2px;
     text-transform:uppercase;
-
     margin-bottom:25px;
-
-    text-shadow:none;       /* NO SHADOW */
+    text-shadow:none;
 }
 
 /* Subtitle */
 
 .hero p{
-    color:#ff0000;          /* WHITE */
+    color:#ffffff;
     font-size:1.1rem;
     letter-spacing:1px;
     line-height:1.8;
     margin:0;
+}
+
+/* Cards */
+
+.card{
+    background:#0d0d0d;
+    border:1px solid #ff0000;
+    border-radius:10px;
+    padding:25px;
+    margin-bottom:25px;
+
+    box-shadow:0 0 10px rgba(255,0,0,0.15);
+
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-3px);
+    box-shadow:0 0 20px rgba(255,0,0,0.25);
+}
+
+/* Headings */
+
+h2{
+    color:#ff4d4d;
+    border-left:4px solid #ff0000;
+    padding-left:12px;
+    margin-bottom:20px;
+}
+
+h3{
+    color:#ffffff;
+    margin-top:20px;
+    margin-bottom:10px;
+}
+
+/* Paragraph */
+
+p{
+    color:#dddddd;
+}
+
+/* Lists */
+
+ul{
+    padding-left:25px;
+    margin-top:10px;
+}
+
+li{
+    margin-bottom:8px;
+}
+
+li::marker{
+    color:#ff4d4d;
+}
+
+/* Badges */
+
+.badge{
+    display:inline-block;
+    background:#ff0000;
+    color:#ffffff;
+    padding:8px 14px;
+    margin:5px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:bold;
+}
+
+/* Links */
+
+a{
+    color:#ff4d4d;
+    text-decoration:none;
+}
+
+a:hover{
+    color:#ffffff;
+}
+
+/* Images */
+
+img{
+    width:100%;
+    border:1px solid #ff0000;
+    border-radius:8px;
+    margin-top:10px;
+}
+
+/* Resume Button */
+
+.resume-btn{
+    display:inline-block;
+    background:#ff0000;
+    color:#ffffff;
+    padding:12px 20px;
+    border-radius:6px;
+    font-weight:bold;
+}
+
+.resume-btn:hover{
+    background:#cc0000;
+}
+
+/* Footer */
+
+footer{
+    text-align:center;
+    margin-top:40px;
+    color:#888888;
 }
