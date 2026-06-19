@@ -9,18 +9,24 @@
 }
 
 body{
-    background-color:#050505;
+    background:#000000 !important;
     color:#ffffff;
     font-family:Consolas, "Courier New", monospace;
-    line-height:1.8;
     padding:20px;
+    margin:0;
+    line-height:1.8;
 
-    /* Cyber Grid Background */
     background-image:
+    radial-gradient(circle at top right,
+    rgba(255,0,0,0.15),
+    transparent 40%),
     linear-gradient(rgba(255,0,0,0.08) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255,0,0,0.08) 1px, transparent 1px);
 
-    background-size:50px 50px;
+    background-size:
+    auto,
+    50px 50px,
+    50px 50px;
 }
 
 /* Hero Section */
