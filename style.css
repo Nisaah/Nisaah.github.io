@@ -1,92 +1,180 @@
-/* Cybersecurity Theme */
+/* =========================
+   CYBERSECURITY PORTFOLIO
+   ========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
 body{
     background:#050505;
     color:#ffffff;
     font-family:Consolas, "Courier New", monospace;
-    margin:0;
-    padding:20px;
     line-height:1.8;
+    padding:20px;
 
+    /* Cyber Grid Background */
     background-image:
-    linear-gradient(rgba(255,0,0,0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,0,0,0.05) 1px, transparent 1px);
+    linear-gradient(rgba(255,0,0,0.12) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,0,0,0.12) 1px, transparent 1px);
 
-    background-size:40px 40px;
+    background-size:50px 50px;
 }
+
+/* Scan line effect */
+
+body::before{
+    content:"";
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    pointer-events:none;
+
+    background:
+    repeating-linear-gradient(
+        transparent 0px,
+        transparent 2px,
+        rgba(255,255,255,0.03) 3px
+    );
+
+    z-index:999;
+}
+
+/* Hero Section */
 
 .hero{
     text-align:center;
-    padding:80px 20px;
-    border-bottom:2px solid #ff0000;
-    margin-bottom:30px;
+    padding:100px 20px;
+    margin-bottom:40px;
+
+    border:1px solid #ff0000;
+
+    box-shadow:
+    0 0 20px rgba(255,0,0,0.4),
+    inset 0 0 20px rgba(255,0,0,0.1);
+
+    background:#0a0a0a;
+}
+
+.hero::before{
+    content:"ACCESS GRANTED";
+    display:block;
+    color:#ff0000;
+    margin-bottom:20px;
+    letter-spacing:4px;
+    font-size:14px;
 }
 
 h1{
     color:#ff0000;
-    font-size:3rem;
+    font-size:3.5rem;
+    letter-spacing:5px;
     text-transform:uppercase;
-    letter-spacing:4px;
+
     text-shadow:
-        0 0 10px #ff0000,
-        0 0 20px #ff0000,
-        0 0 40px #ff0000;
+    0 0 10px #ff0000,
+    0 0 20px #ff0000,
+    0 0 40px #ff0000;
 }
 
-h2{
-    color:#ff0000;
-    text-shadow:0 0 10px #ff0000;
-    border-left:5px solid #ff0000;
-    padding-left:15px;
+.hero p{
+    margin-top:15px;
+    color:#cccccc;
+    font-size:1.1rem;
 }
 
-h3{
-    color:#ffffff;
-}
+/* Cards */
 
 .card{
-    background:#0f0f0f;
+    background:#0d0d0d;
+
     border:1px solid #ff0000;
     border-radius:10px;
+
     padding:25px;
     margin-bottom:25px;
 
     box-shadow:
-        0 0 10px rgba(255,0,0,0.3),
-        0 0 25px rgba(255,0,0,0.15);
+    0 0 15px rgba(255,0,0,0.25),
+    0 0 40px rgba(255,0,0,0.1);
 
     transition:0.3s;
 }
 
 .card:hover{
     transform:translateY(-5px);
+
     box-shadow:
-        0 0 20px rgba(255,0,0,0.5),
-        0 0 40px rgba(255,0,0,0.2);
+    0 0 25px rgba(255,0,0,0.5),
+    0 0 60px rgba(255,0,0,0.2);
 }
 
-.badge{
-    display:inline-block;
-    background:#ff0000;
-    color:white;
-    padding:8px 15px;
-    border-radius:20px;
-    margin:5px;
-    font-size:14px;
-    font-weight:bold;
+/* Headings */
+
+h2{
+    color:#ff0000;
+
+    margin-bottom:20px;
+
+    border-left:5px solid #ff0000;
+    padding-left:15px;
+
+    text-shadow:
+    0 0 10px #ff0000;
 }
+
+h3{
+    color:#ffffff;
+    margin-top:20px;
+    margin-bottom:10px;
+}
+
+/* Paragraph */
+
+p{
+    color:#dddddd;
+}
+
+/* Lists */
 
 ul{
     padding-left:25px;
+    margin-top:10px;
 }
 
 li{
-    margin-bottom:8px;
+    margin-bottom:10px;
 }
 
 li::marker{
     color:#ff0000;
 }
+
+/* Skill Badges */
+
+.badge{
+    display:inline-block;
+
+    background:#ff0000;
+    color:white;
+
+    padding:8px 15px;
+    margin:5px;
+
+    border-radius:20px;
+
+    font-size:14px;
+    font-weight:bold;
+
+    box-shadow:
+    0 0 10px rgba(255,0,0,0.5);
+}
+
+/* Links */
 
 a{
     color:#ff4d4d;
@@ -95,22 +183,49 @@ a{
 
 a:hover{
     color:white;
-    text-shadow:0 0 10px red;
+
+    text-shadow:
+    0 0 10px #ff0000;
 }
+
+/* Images */
 
 img{
     width:100%;
+
     border:1px solid #ff0000;
     border-radius:8px;
-    box-shadow:0 0 15px rgba(255,0,0,0.3);
+
+    box-shadow:
+    0 0 15px rgba(255,0,0,0.4);
 }
 
-p{
-    color:#e0e0e0;
+/* Resume Button */
+
+.resume-btn{
+    display:inline-block;
+
+    background:#ff0000;
+    color:white;
+
+    padding:12px 20px;
+
+    border-radius:5px;
+
+    font-weight:bold;
+
+    box-shadow:
+    0 0 15px rgba(255,0,0,0.5);
 }
+
+.resume-btn:hover{
+    background:#cc0000;
+}
+
+/* Footer */
 
 footer{
     text-align:center;
     margin-top:40px;
-    color:#888;
+    color:#888888;
 }
