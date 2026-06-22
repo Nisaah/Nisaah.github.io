@@ -26,7 +26,7 @@
     </p>
 
     <p class="hero-summary">
-        Screenshots showing Splunk setup, Search & Reporting, detection validation,
+        Screenshots showing Splunk setup, Search & Reporting, detection searches,
         triggered alerts, and SOC dashboard panels.
     </p>
 
@@ -48,7 +48,8 @@
 
 ```
 <p>
-    These screenshots show the Splunk environment, data ingestion, and Search & Reporting workspace used for the SOC lab.
+    This section shows the Splunk Enterprise environment used for the SOC lab,
+    including the home page, data input area, and Search & Reporting workspace.
 </p>
 
 <div class="gallery-grid">
@@ -72,43 +73,84 @@
 </section>
 
 <section class="card">
-    <h2>Triggered Alerts & Detection Validation</h2>
+    <h2>Detection Searches</h2>
 
 ```
 <p>
-    These screenshots show alert validation and detection evidence for authentication, PowerShell,
-    process creation, service installation, and local administrator group activity.
+    This section shows SPL detection searches created for authentication monitoring,
+    service installation detection, PowerShell execution monitoring, Sysmon process creation,
+    and local administrator group change detection.
 </p>
 
 <div class="gallery-grid">
     <div class="gallery-item">
-        <h3>Multiple Failed Login Attempts</h3>
-        <img src="multiple_failed_login_attempt.png" alt="Multiple failed login attempts detection and alert evidence">
+        <h3>Multiple Failed Login Detection Search</h3>
+        <img src="failed_login.png" alt="SPL search for multiple failed login attempts">
     </div>
 
     <div class="gallery-item">
-        <h3>Successful Login After Failed Attempts</h3>
-        <img src="successful_login_attempt.png" alt="Successful login after failed attempts alert evidence">
+        <h3>New Windows Service Installed Search</h3>
+        <img src="new_windows_installed.png" alt="SPL search for new Windows service installed">
     </div>
 
     <div class="gallery-item">
-        <h3>PowerShell Execution Monitoring</h3>
-        <img src="powershell_execution_monitoring.png" alt="PowerShell execution monitoring alert evidence">
+        <h3>PowerShell Execution Search</h3>
+        <img src="powershell_execution.png" alt="SPL search for PowerShell execution monitoring">
     </div>
 
     <div class="gallery-item">
-        <h3>Sysmon Process Creation Monitoring</h3>
-        <img src="sysmon_process_creation.png" alt="Sysmon process creation monitoring alert evidence">
+        <h3>Sysmon Process Creation Search</h3>
+        <img src="sysmon_process_creation_search.png" alt="SPL search for Sysmon process creation monitoring">
     </div>
 
     <div class="gallery-item">
-        <h3>New Windows Service Installed</h3>
-        <img src="new_windows_service_installed.png" alt="New Windows service installed detection evidence">
+        <h3>User Added to Local Administrators Group Search</h3>
+        <img src="user-added-to-local-admin-group.png" alt="SPL search for user added to local administrators group">
+    </div>
+</div>
+```
+
+</section>
+
+<section class="card">
+    <h2>Triggered Alerts</h2>
+
+```
+<p>
+    This section shows triggered alerts generated from the detection rules.
+    These screenshots demonstrate that the SPL detections were configured as scheduled alerts
+    and validated successfully.
+</p>
+
+<div class="gallery-grid">
+    <div class="gallery-item">
+        <h3>SOC-LAB-001 - Multiple Failed Login Attempts</h3>
+        <img src="multiple_failed_login_attempt.png" alt="Triggered alert for multiple failed login attempts">
     </div>
 
     <div class="gallery-item">
-        <h3>User Added to Local Administrators Group</h3>
-        <img src="user_added_to_local_admin_group.png" alt="User added to local administrators group alert evidence">
+        <h3>SOC-LAB-002 - Successful Login After Failed Attempts</h3>
+        <img src="successful_login_attempt.png" alt="Triggered alert for successful login after failed attempts">
+    </div>
+
+    <div class="gallery-item">
+        <h3>SOC-LAB-003 - PowerShell Execution Monitoring</h3>
+        <img src="powershell_execution_monitoring.png" alt="Triggered alert for PowerShell execution monitoring">
+    </div>
+
+    <div class="gallery-item">
+        <h3>SOC-LAB-004 - Sysmon Process Creation Monitoring</h3>
+        <img src="sysmon_process_creation.png" alt="Triggered alert for Sysmon process creation monitoring">
+    </div>
+
+    <div class="gallery-item">
+        <h3>SOC-LAB-005 - New Windows Service Installed</h3>
+        <img src="new_windows_service_installed.png" alt="Triggered alert for new Windows service installed">
+    </div>
+
+    <div class="gallery-item">
+        <h3>SOC-LAB-006 - User Added to Local Administrators Group</h3>
+        <img src="user_added_to_local_admin_group.png" alt="Triggered alert for user added to local administrators group">
     </div>
 </div>
 ```
@@ -120,8 +162,9 @@
 
 ```
 <p>
-    These screenshots show the SOC Monitoring Dashboard created in Splunk for authentication activity,
-    detection summary, PowerShell execution, Sysmon process monitoring, service installation,
+    This section shows the SOC Monitoring Dashboard created in Splunk.
+    The dashboard provides visibility into security event trends, detection summary,
+    failed logins, PowerShell execution, Sysmon process creation, new service installation,
     local administrator group changes, and top Windows Security event codes.
 </p>
 
@@ -165,8 +208,9 @@
 
 ```
 <p>
-    The gallery is intended to provide visual proof of the hands-on Splunk SOC lab.
-    Screenshots include searches, dashboards, and triggered alerts that can be discussed during SOC Analyst interviews.
+    This gallery provides visual evidence of the hands-on Splunk SOC lab.
+    The screenshots can be used during SOC Analyst interviews to explain log ingestion,
+    SPL detection logic, alert validation, dashboard creation, and basic incident investigation workflow.
 </p>
 ```
 
