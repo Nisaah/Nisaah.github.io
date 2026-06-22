@@ -7,237 +7,44 @@
     <title>Bahjath Nisa | SOC Analyst Portfolio | Splunk SIEM</title>
 
 ```
-<meta name="description" content="SOC Analyst portfolio of Bahjath Nisa featuring a Splunk Enterprise SOC Detection and Incident Response Lab with Windows Security Logs, Sysmon, SPL detections, alerts, dashboards, MITRE ATT&CK mapping, and incident reporting.">
+<meta name="description" content="SOC Analyst portfolio of Bahjath Nisa featuring a Splunk Enterprise SOC Detection and Incident Response Lab with Windows Security Logs, Sysmon, SPL detections, triggered alerts, dashboards, MITRE ATT&CK mapping, and incident reporting.">
 
 <meta name="keywords" content="SOC Analyst, Junior SOC Analyst, Splunk, SIEM, Cybersecurity, Sysmon, Windows Security Logs, Threat Detection, Incident Response, UAE SOC Analyst, SPL, MITRE ATT&CK, Security Monitoring">
 
-<style>
-    * {
-        box-sizing: border-box;
-    }
-
-    body {
-        margin: 0;
-        font-family: Arial, Helvetica, sans-serif;
-        background: #f4f7fb;
-        color: #1f2937;
-        line-height: 1.6;
-    }
-
-    a {
-        color: #0f62fe;
-        text-decoration: none;
-        font-weight: 600;
-    }
-
-    a:hover {
-        text-decoration: underline;
-    }
-
-    .hero {
-        background: linear-gradient(135deg, #0f172a, #1e3a8a);
-        color: #ffffff;
-        padding: 32px 20px;
-        text-align: center;
-    }
-
-    .hero h1 {
-        margin: 0;
-        font-size: 34px;
-        letter-spacing: 0.5px;
-    }
-
-    .headline {
-        margin: 8px 0 10px;
-        font-size: 18px;
-        font-weight: 600;
-        color: #dbeafe;
-    }
-
-    .hero-summary {
-        max-width: 900px;
-        margin: 8px auto;
-        font-size: 15px;
-        color: #e5e7eb;
-    }
-
-    .hero-links {
-        margin-top: 18px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-    }
-
-    .hero-links a {
-        background: #ffffff;
-        color: #0f172a;
-        padding: 9px 14px;
-        border-radius: 6px;
-        font-size: 14px;
-    }
-
-    main {
-        max-width: 1120px;
-        margin: 24px auto;
-        padding: 0 16px;
-    }
-
-    .card {
-        background: #ffffff;
-        border-radius: 12px;
-        padding: 24px;
-        margin-bottom: 20px;
-        box-shadow: 0 4px 14px rgba(15, 23, 42, 0.08);
-    }
-
-    h2 {
-        margin-top: 0;
-        color: #0f172a;
-        border-bottom: 2px solid #e5e7eb;
-        padding-bottom: 8px;
-    }
-
-    h3 {
-        color: #1e3a8a;
-        margin-bottom: 8px;
-    }
-
-    ul {
-        padding-left: 22px;
-    }
-
-    .table-wrapper {
-        overflow-x: auto;
-        margin-top: 14px;
-    }
-
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        font-size: 14px;
-        background: #ffffff;
-    }
-
-    th {
-        background: #0f172a;
-        color: #ffffff;
-        text-align: left;
-        padding: 12px;
-        white-space: nowrap;
-    }
-
-    td {
-        border: 1px solid #e5e7eb;
-        padding: 12px;
-        vertical-align: top;
-    }
-
-    tr:nth-child(even) {
-        background: #f8fafc;
-    }
-
-    .badge {
-        display: inline-block;
-        background: #e0ecff;
-        color: #123a75;
-        padding: 7px 10px;
-        border-radius: 20px;
-        margin: 5px 5px 5px 0;
-        font-size: 13px;
-        font-weight: 600;
-    }
-
-    .gallery-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-        gap: 18px;
-        margin-top: 15px;
-    }
-
-    .gallery-item {
-        background: #f8fafc;
-        border: 1px solid #e5e7eb;
-        border-radius: 10px;
-        padding: 12px;
-    }
-
-    .gallery-item h3 {
-        font-size: 15px;
-        margin-top: 0;
-    }
-
-    .gallery-item img {
-        width: 100%;
-        border-radius: 8px;
-        border: 1px solid #d1d5db;
-        background: #ffffff;
-    }
-
-    .note {
-        background: #fff7ed;
-        border-left: 4px solid #f97316;
-        padding: 12px;
-        border-radius: 6px;
-        font-size: 14px;
-    }
-
-    .footer {
-        text-align: center;
-        padding: 18px;
-        background: #0f172a;
-        color: #dbeafe;
-        font-size: 14px;
-    }
-
-    @media (max-width: 700px) {
-        .hero h1 {
-            font-size: 28px;
-        }
-
-        .headline {
-            font-size: 16px;
-        }
-
-        .card {
-            padding: 18px;
-        }
-
-        th, td {
-            font-size: 13px;
-            padding: 9px;
-        }
-    }
-</style>
+<link rel="stylesheet" href="style.css">
 ```
 
 </head>
 
 <body>
 
-<header class="hero">
-    <h1>Bahjath Nisa</h1>
+<header class="hero compact-hero">
+    <div class="hero-content">
+        <h1>Bahjath Nisa</h1>
 
 ```
-<p class="headline">
-    SOC Analyst | Splunk SIEM | Threat Detection | Incident Response
-</p>
+    <p class="headline">
+        SOC Analyst | Splunk SIEM | Threat Detection | Incident Response
+    </p>
 
-<p class="hero-summary">
-    Hands-on cybersecurity portfolio focused on Splunk Enterprise SIEM, Windows Security log analysis,
-    Sysmon telemetry, SPL detection rules, alerting, dashboarding, MITRE ATT&CK mapping, and incident investigation.
-</p>
+    <p class="hero-summary">
+        Hands-on cybersecurity portfolio focused on Splunk Enterprise SIEM, Windows Security log analysis,
+        Sysmon telemetry, SPL detection rules, triggered alerts, SOC dashboards, MITRE ATT&CK mapping,
+        and incident investigation.
+    </p>
 
-<p class="hero-summary">
-    Seeking SOC Analyst / Junior SOC Analyst opportunities in the UAE.
-</p>
+    <p class="hero-summary">
+        Seeking SOC Analyst / Junior SOC Analyst opportunities in the UAE.
+    </p>
 
-<div class="hero-links">
-    <a href="resume.pdf" target="_blank">Download Resume</a>
-    <a href="./detections.md" target="_blank">Detection Queries</a>
-    <a href="incident_report.pdf" target="_blank">Incident Report</a>
-    <a href="https://github.com/Nisaah" target="_blank">GitHub</a>
-    <a href="https://www.linkedin.com/in/bahjath-nisa-023730265" target="_blank">LinkedIn</a>
+    <div class="hero-links">
+        <a href="resume.pdf" target="_blank">Download Resume</a>
+        <a href="./detections.md" target="_blank">Detection Queries</a>
+        <a href="incident_report.pdf" target="_blank">Incident Report</a>
+        <a href="gallery.html">Project Gallery</a>
+        <a href="https://github.com/Nisaah" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/bahjath-nisa-023730265" target="_blank">LinkedIn</a>
+    </div>
 </div>
 ```
 
@@ -263,7 +70,7 @@
 
 </section>
 
-<section class="card">
+<section class="card highlight-card">
     <h2>Featured Project: Splunk Enterprise SOC Detection & Incident Response Lab</h2>
 
 ```
@@ -274,38 +81,44 @@
     alert validation, dashboard monitoring, and incident documentation.
 </p>
 
-<h3>Project Objectives</h3>
+<div class="two-column">
+    <div>
+        <h3>Project Objectives</h3>
 
-<ul>
-    <li>Build a practical SOC lab using Splunk Enterprise.</li>
-    <li>Collect Windows Security, System, Application, and Sysmon logs.</li>
-    <li>Create SPL-based detection rules for authentication, process, service, and privilege activity.</li>
-    <li>Configure scheduled alerts and validate triggered alerts.</li>
-    <li>Create a SOC monitoring dashboard for investigation visibility.</li>
-    <li>Prepare an incident report based on detected activity.</li>
-</ul>
+        <ul>
+            <li>Build a practical SOC lab using Splunk Enterprise.</li>
+            <li>Collect Windows Security, System, Application, and Sysmon logs.</li>
+            <li>Create SPL-based detection rules for authentication, process, service, and privilege activity.</li>
+            <li>Configure scheduled alerts and validate triggered alerts.</li>
+            <li>Create a SOC monitoring dashboard for investigation visibility.</li>
+            <li>Prepare an incident report based on detected activity.</li>
+        </ul>
+    </div>
+
+    <div>
+        <h3>Lab Architecture</h3>
+
+        <ul>
+            <li><strong>Endpoint:</strong> Windows laptop</li>
+            <li><strong>SIEM:</strong> Splunk Enterprise</li>
+            <li><strong>Forwarding:</strong> Splunk Universal Forwarder</li>
+            <li><strong>Log Sources:</strong> Windows Security, System, Application, Sysmon</li>
+            <li><strong>Index:</strong> soc_lab</li>
+            <li><strong>Detection Language:</strong> SPL</li>
+        </ul>
+    </div>
+</div>
 ```
 
 </section>
 
 <section class="card">
-    <h2>Lab Architecture</h2>
+    <h2>Completed Lab Activities</h2>
 
 ```
-<ul>
-    <li><strong>Endpoint:</strong> Windows laptop</li>
-    <li><strong>SIEM Platform:</strong> Splunk Enterprise</li>
-    <li><strong>Forwarding:</strong> Splunk Universal Forwarder</li>
-    <li><strong>Log Sources:</strong> Windows Security, System, Application, and Sysmon Operational Logs</li>
-    <li><strong>Index:</strong> soc_lab</li>
-    <li><strong>Detection Language:</strong> SPL</li>
-</ul>
-
-<h3>Completed Activities</h3>
-
-<ul>
+<ul class="check-list">
     <li>Installed Splunk Enterprise.</li>
-    <li>Created a dedicated Splunk index named <strong>soc_lab</strong>.</li>
+    <li>Created a dedicated Splunk index named soc_lab.</li>
     <li>Configured Windows Security, System, and Application log collection.</li>
     <li>Installed Sysmon and validated Sysmon event generation.</li>
     <li>Configured Splunk Universal Forwarder for log forwarding.</li>
@@ -378,7 +191,7 @@
 </div>
 
 <p>
-    <a href="./detections.md" target="_blank">View Full SPL Detection Queries</a>
+    <a class="text-link" href="./detections.md" target="_blank">View full SPL detection queries</a>
 </p>
 ```
 
@@ -446,15 +259,14 @@
 
 ```
 <p>
-    Created a Splunk dashboard named <strong>SOC Monitoring Dashboard</strong>
-    to provide visibility into authentication events, failed logins, PowerShell execution,
-    Sysmon process activity, new service installation, local administrator group changes,
-    and Windows Security event trends.
+    Created a Splunk dashboard named SOC Monitoring Dashboard to provide visibility into authentication events,
+    failed logins, PowerShell execution, Sysmon process activity, new service installation,
+    local administrator group changes, and Windows Security event trends.
 </p>
 
 <h3>Dashboard Panels</h3>
 
-<ul>
+<ul class="check-list">
     <li>Total Security Events Over Time</li>
     <li>SOC Detection Summary</li>
     <li>Failed Login Attempts by User</li>
@@ -474,9 +286,9 @@
 
 ```
 <p>
-    Prepared a sample incident report for a detected security event, including
-    alert observation, SPL query used, affected account and host, investigation steps,
-    impact assessment, and recommended remediation actions.
+    Prepared a sample incident report for a detected security event, including alert observation,
+    SPL query used, affected account and host, investigation steps, impact assessment,
+    and recommended remediation actions.
 </p>
 
 <ul>
@@ -488,65 +300,35 @@
 </ul>
 
 <p>
-    <a href="incident_report.pdf" target="_blank">View Incident Report</a>
+    <a class="text-link" href="incident_report.pdf" target="_blank">View incident report</a>
 </p>
 ```
 
 </section>
 
 <section class="card">
-    <h2>Project Evidence Gallery</h2>
+    <h2>Project Gallery</h2>
 
 ```
 <p>
-    The screenshots below provide evidence of Splunk log ingestion, SPL detection searches,
-    triggered alerts, SOC dashboard panels, and incident investigation workflow.
+    The project gallery contains screenshots of Splunk setup, Search & Reporting, dashboard panels,
+    detection searches, and triggered alerts.
 </p>
 
-<div class="gallery-grid">
+<div class="gallery-preview">
+    <div class="gallery-item">
+        <h3>Splunk Home</h3>
+        <img src="splunk_home.png" alt="Splunk Enterprise home page">
+    </div>
+
     <div class="gallery-item">
         <h3>SOC Monitoring Dashboard</h3>
-        <img src="soc_dashboard.png" alt="Splunk SOC Monitoring Dashboard Screenshot">
-    </div>
-
-    <div class="gallery-item">
-        <h3>Triggered Alerts</h3>
-        <img src="triggered_alerts.png" alt="Splunk Triggered Alerts Screenshot">
-    </div>
-
-    <div class="gallery-item">
-        <h3>Multiple Failed Login Detection</h3>
-        <img src="failed_login_detection.png" alt="Multiple Failed Login Detection Screenshot">
-    </div>
-
-    <div class="gallery-item">
-        <h3>Successful Login After Failed Attempts</h3>
-        <img src="successful_login_detection.png" alt="Successful Login After Failed Attempts Screenshot">
-    </div>
-
-    <div class="gallery-item">
-        <h3>PowerShell Execution Monitoring</h3>
-        <img src="powershell_detection.png" alt="PowerShell Execution Monitoring Screenshot">
-    </div>
-
-    <div class="gallery-item">
-        <h3>Sysmon Process Creation Monitoring</h3>
-        <img src="sysmon_process_creation.png" alt="Sysmon Process Creation Monitoring Screenshot">
-    </div>
-
-    <div class="gallery-item">
-        <h3>New Windows Service Installed</h3>
-        <img src="new_service_installed.png" alt="New Windows Service Installed Detection Screenshot">
-    </div>
-
-    <div class="gallery-item">
-        <h3>User Added to Local Administrators Group</h3>
-        <img src="local_admin_group_change.png" alt="User Added to Local Administrators Group Detection Screenshot">
+        <img src="dashboard1.png" alt="SOC Monitoring Dashboard overview">
     </div>
 </div>
 
-<p class="note">
-    If any screenshot is not available yet, remove that image block temporarily to avoid broken images on the portfolio.
+<p>
+    <a class="button-link" href="gallery.html">Open Full Project Gallery</a>
 </p>
 ```
 
@@ -582,27 +364,11 @@
 <span class="badge">Windows</span>
 <span class="badge">Linux Basics</span>
 <span class="badge">Networking Fundamentals</span>
-<span class="badge">CCNA</span>
 ```
 
 </section>
 
-<section class="card">
-    <h2>Resume</h2>
-
-```
-<p>
-    Download my resume for SOC Analyst and cybersecurity opportunities.
-</p>
-
-<p>
-    <a href="resume.pdf" target="_blank">Download Resume</a>
-</p>
-```
-
-</section>
-
-<section class="card">
+<section class="card contact-card">
     <h2>Contact</h2>
 
 ```
