@@ -3,122 +3,314 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bahjath Nisa | Cybersecurity Portfolio</title>
+
+    <title>Bahjath Nisa | SOC Analyst Portfolio | Splunk SIEM Lab</title>
+
+    <meta name="description" content="Cybersecurity portfolio of Bahjath Nisa showcasing a Splunk Enterprise SOC Detection and Incident Response Lab with Windows Security Logs, Sysmon, SPL detection rules, alerts, dashboards, and incident reporting.">
+    <meta name="keywords" content="SOC Analyst, Cybersecurity, Splunk, SIEM, Sysmon, Windows Security Logs, Threat Detection, Incident Response, UAE SOC Analyst, Security Monitoring, SPL, MITRE ATT&CK">
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="hero">
+<header class="hero">
     <h1>Bahjath Nisa</h1>
-    <p>SOC Analyst | Cybersecurity Enthusiast | Splunk SIEM</p>
-</div>
-
-<div class="card">
-    <h2>👨‍💻 About Me</h2>
+    <p>SOC Analyst | Splunk SIEM | Threat Detection | Incident Response</p>
 
     <p>
-        Cybersecurity enthusiast with hands-on experience in SOC monitoring,
-        Splunk SIEM, Windows Security Logs, Sysmon, and threat detection.
-        Currently seeking SOC Analyst opportunities in the UAE.
+        UAE-focused cybersecurity portfolio demonstrating hands-on SOC monitoring,
+        detection engineering, alert creation, dashboarding, and incident investigation using Splunk Enterprise.
     </p>
-    
-</div>
-
-<div class="card">
-    <h2>🛡 Splunk Enterprise SOC Detection & Incident Response Lab</h2>
 
     <p>
-        Built a SOC monitoring lab using Splunk Enterprise to collect,
-        analyze, and investigate Windows Security and Sysmon logs.
+        <a href="resume.pdf" target="_blank">Download Resume</a> |
+        <a href="./detections.md" target="_blank">View Detection Queries</a> |
+        <a href="https://github.com/Nisaah" target="_blank">GitHub</a>
+    </p>
+</header>
+
+<main>
+
+<section class="card">
+    <h2>About Me</h2>
+
+    <p>
+        Cybersecurity enthusiast with practical hands-on experience in SOC monitoring,
+        Splunk Enterprise SIEM, Windows Security Event Logs, Sysmon telemetry,
+        SPL detection searches, alerting, dashboard creation, and incident reporting.
     </p>
 
-    <h3>✅ Completed Activities</h3>
+    <p>
+        Currently seeking SOC Analyst / Junior SOC Analyst opportunities in the UAE,
+        with a strong interest in security monitoring, threat detection, incident triage,
+        and SIEM-based investigation.
+    </p>
+</section>
+
+<section class="card">
+    <h2>Featured Project: Splunk Enterprise SOC Detection & Incident Response Lab</h2>
+
+    <p>
+        Built a home-based SOC monitoring lab using Splunk Enterprise to collect,
+        analyze, detect, and investigate security events from Windows Security Logs
+        and Sysmon logs. The lab simulates real SOC activities including log ingestion,
+        detection engineering, alert generation, dashboard monitoring, and incident documentation.
+    </p>
+
+    <h3>Project Objectives</h3>
 
     <ul>
-        <li>Splunk Enterprise Installation</li>
-        <li>Dedicated Index Creation (soc_lab)</li>
-        <li>Windows Event Log Collection</li>
-        <li>Sysmon Installation & Integration</li>
-        <li>Splunk Universal Forwarder Configuration</li>
+        <li>Build a beginner-friendly SOC lab using Splunk Enterprise.</li>
+        <li>Collect Windows Security, System, Application, and Sysmon logs.</li>
+        <li>Create SPL-based detection rules for authentication, process, service, and privilege activity.</li>
+        <li>Configure scheduled alerts and validate triggered alerts.</li>
+        <li>Create a SOC monitoring dashboard for analyst visibility.</li>
+        <li>Prepare an incident report based on detected activity.</li>
     </ul>
+</section>
 
-    <h3>🚨 Security Detections Implemented</h3>
+<section class="card">
+    <h2>Lab Architecture</h2>
 
     <ul>
-        <li>Multiple Failed Login Detection (Event ID 4625)</li>
-        <li>Successful Login After Multiple Failed Attempts</li>
-        <li>Suspicious Process Execution Monitoring (Sysmon)</li>
+        <li><strong>Endpoint:</strong> Windows laptop</li>
+        <li><strong>Log Sources:</strong> Windows Security Logs, System Logs, Application Logs, Sysmon Operational Logs</li>
+        <li><strong>Forwarding:</strong> Splunk Universal Forwarder</li>
+        <li><strong>SIEM Platform:</strong> Splunk Enterprise</li>
+        <li><strong>Index:</strong> soc_lab</li>
+        <li><strong>Detection Language:</strong> SPL</li>
     </ul>
 
-    <h3 class="query-link">
-    <a href="./detections.md" target="_blank">
-        📄 View Detection Queries
-    </a>
-    </h3>
+    <h3>Completed Activities</h3>
 
-    <h3>🛠 Technologies Used</h3>
+    <ul>
+        <li>Installed Splunk Enterprise.</li>
+        <li>Created dedicated Splunk index: <strong>soc_lab</strong>.</li>
+        <li>Configured Windows Security, System, and Application log collection.</li>
+        <li>Installed Sysmon and validated Sysmon event generation.</li>
+        <li>Configured Splunk Universal Forwarder to forward logs to Splunk.</li>
+        <li>Created detection searches and scheduled alerts.</li>
+        <li>Created SOC Monitoring Dashboard with multiple security panels.</li>
+        <li>Prepared screenshots and a sample incident report.</li>
+    </ul>
+</section>
 
+<section class="card">
+    <h2>Security Detection Use Cases</h2>
+
+    <p>
+        The following detection rules were created to simulate common SOC monitoring use cases.
+    </p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Detection ID</th>
+                <th>Detection Name</th>
+                <th>Data Source</th>
+                <th>Purpose</th>
+                <th>MITRE ATT&CK</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>SOC-LAB-001</td>
+                <td>Multiple Failed Login Attempts</td>
+                <td>Windows Security Event ID 4625</td>
+                <td>Detect possible brute-force or password guessing activity.</td>
+                <td>T1110 - Brute Force</td>
+            </tr>
+            <tr>
+                <td>SOC-LAB-002</td>
+                <td>Successful Login After Failed Attempts</td>
+                <td>Windows Security Event IDs 4624 and 4625</td>
+                <td>Identify possible successful login after multiple failed attempts.</td>
+                <td>T1110, T1078</td>
+            </tr>
+            <tr>
+                <td>SOC-LAB-003</td>
+                <td>PowerShell Execution Monitoring</td>
+                <td>Sysmon Event ID 1</td>
+                <td>Monitor PowerShell execution and review command-line activity.</td>
+                <td>T1059.001 - PowerShell</td>
+            </tr>
+            <tr>
+                <td>SOC-LAB-004</td>
+                <td>Sysmon Process Creation Monitoring</td>
+                <td>Sysmon Event ID 1</td>
+                <td>Monitor process creation, command line, user, and parent process relationships.</td>
+                <td>T1059 - Command and Scripting Interpreter</td>
+            </tr>
+            <tr>
+                <td>SOC-LAB-005</td>
+                <td>New Windows Service Installed</td>
+                <td>Windows Event ID 7045</td>
+                <td>Detect new Windows service creation that may indicate persistence.</td>
+                <td>T1543.003 - Windows Service</td>
+            </tr>
+            <tr>
+                <td>SOC-LAB-006</td>
+                <td>User Added to Local Administrators Group</td>
+                <td>Windows Security Event ID 4732</td>
+                <td>Detect local privilege group modification and possible privilege escalation.</td>
+                <td>T1098 - Account Manipulation</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p class="query-link">
+        <a href="./detections.md" target="_blank">View Full SPL Detection Queries</a>
+    </p>
+</section>
+
+<section class="card">
+    <h2>SOC Monitoring Dashboard</h2>
+
+    <p>
+        Created a Splunk dashboard named <strong>SOC Monitoring Dashboard</strong>
+        to provide visibility into authentication activity, endpoint process execution,
+        PowerShell usage, new service installation, privilege group changes, and overall security event trends.
+    </p>
+
+    <h3>Dashboard Panels Created</h3>
+
+    <ul>
+        <li>Total Security Events Over Time</li>
+        <li>SOC Detection Summary</li>
+        <li>Failed Login Attempts by User</li>
+        <li>Successful Login After Failed Attempts</li>
+        <li>PowerShell Execution Monitoring</li>
+        <li>Sysmon Process Creation Monitoring</li>
+        <li>New Windows Service Installed</li>
+        <li>User Added to Local Administrators Group</li>
+        <li>Top Windows Security Event Codes</li>
+    </ul>
+</section>
+
+<section class="card">
+    <h2>Incident Report</h2>
+
+    <p>
+        Prepared a sample incident report for a detected security event, including
+        alert observation, SPL query used, affected account/host, investigation steps,
+        impact assessment, and recommended remediation actions.
+    </p>
+
+    <ul>
+        <li><strong>Incident Type:</strong> Multiple Failed Login Attempts</li>
+        <li><strong>Tool Used:</strong> Splunk Enterprise</li>
+        <li><strong>Data Source:</strong> Windows Security Event Logs</li>
+        <li><strong>Event ID:</strong> 4625</li>
+        <li><strong>Investigation Focus:</strong> Account name, host, workstation, event count, and timeline</li>
+        <li><strong>Recommended Actions:</strong> User verification, password reset if suspicious, source host review, and continued monitoring</li>
+    </ul>
+
+    <p>
+        <a href="incident_report.pdf" target="_blank">View Incident Report</a>
+    </p>
+</section>
+
+<section class="card">
+    <h2>Project Screenshots</h2>
+
+    <p>
+        Screenshots below provide evidence of Splunk log ingestion, detection searches,
+        triggered alerts, and dashboard creation.
+    </p>
+
+    <h3>Splunk SOC Dashboard</h3>
+    <img src="soc_dashboard.png" alt="Splunk SOC Monitoring Dashboard Screenshot">
+
+    <h3>Multiple Failed Login Detection</h3>
+    <img src="failed_login_detection.png" alt="Multiple Failed Login Detection in Splunk">
+
+    <h3>Triggered Alerts</h3>
+    <img src="triggered_alerts.png" alt="Splunk Triggered Alerts Screenshot">
+
+    <h3>PowerShell Execution Monitoring</h3>
+    <img src="powershell_detection.png" alt="PowerShell Execution Monitoring in Splunk">
+
+    <h3>Sysmon Process Creation Monitoring</h3>
+    <img src="sysmon_process_creation.png" alt="Sysmon Process Creation Monitoring in Splunk">
+
+    <h3>New Windows Service Installed</h3>
+    <img src="new_service_installed.png" alt="New Windows Service Installed Detection in Splunk">
+</section>
+
+<section class="card">
+    <h2>Technical Skills</h2>
+
+    <h3>SIEM & SOC</h3>
     <span class="badge">Splunk Enterprise</span>
-    <span class="badge">Sysmon</span>
-    <span class="badge">Universal Forwarder</span>
-    <span class="badge">Windows Event Logs</span>
     <span class="badge">SPL</span>
-
-    <h3>🎯 MITRE ATT&CK Mapping</h3>
-
-    <span class="badge">T1110</span>
-    <span class="badge">T1078</span>
-</div>
-
-<div class="card">
-    <h2>💡 Technical Skills</h2>
-
-    <span class="badge">SOC Analysis</span>
-    <span class="badge">Splunk</span>
-    <span class="badge">Threat Detection</span>
+    <span class="badge">SOC Monitoring</span>
+    <span class="badge">Alert Triage</span>
     <span class="badge">Incident Response</span>
+    <span class="badge">Threat Detection</span>
+    <span class="badge">Dashboarding</span>
+
+    <h3>Endpoint & Log Analysis</h3>
+    <span class="badge">Windows Security Logs</span>
     <span class="badge">Sysmon</span>
-    <span class="badge">Windows Security</span>
-    <span class="badge">CCNA</span>
+    <span class="badge">Event ID Analysis</span>
+    <span class="badge">PowerShell Monitoring</span>
+    <span class="badge">Process Creation Analysis</span>
+
+    <h3>Security Concepts</h3>
+    <span class="badge">MITRE ATT&CK</span>
+    <span class="badge">Brute Force Detection</span>
+    <span class="badge">Privilege Escalation Monitoring</span>
+    <span class="badge">Persistence Detection</span>
+    <span class="badge">IOC Analysis</span>
+
+    <h3>Networking & Fundamentals</h3>
     <span class="badge">Networking</span>
-</div>
+    <span class="badge">CCNA</span>
+    <span class="badge">Windows</span>
+    <span class="badge">Linux Basics</span>
+</section>
 
-<div class="card">
-    <h2>📸 Project Screenshots</h2>
+<section class="card">
+    <h2>Resume</h2>
 
- <h3>Multiple Failed Login Detection</h3>
-    <img src="failed_login_detection.png" alt="Failed Login Detection">
-
-    <h3>Successful Login After Multiple Failed Attempts</h3>
-    <img src="successful_login_detection.png" alt="Successful Login">
-    
-</div>
-
-<div class="card">
-    <h2>📄 Resume</h2>
+    <p>
+        Download my resume for SOC Analyst and cybersecurity opportunities.
+    </p>
 
     <p>
         <a href="resume.pdf" target="_blank">Download Resume</a>
     </p>
-</div>
+</section>
 
-<div class="card">
-    <h2>📬 Contact</h2>
+<section class="card">
+    <h2>Contact</h2>
 
     <p>
-        GitHub: <a href="https://github.com/Nisaah" target="_blank">github.com/Nisaah</a>
+        <strong>GitHub:</strong>
+        <a href="https://github.com/Nisaah" target="_blank">github.com/Nisaah</a>
     </p>
 
     <p>
-        LinkedIn: Add your LinkedIn profile link here
+        <strong>LinkedIn:</strong>
+        <a href="https://www.linkedin.com/in/bahjath-nisa-023730265" target="_blank">
+            linkedin.com/in/bahjath-nisa-023730265
+        </a>
     </p>
 
     <p>
-        Email: Add your professional email here
+        <strong>Email:</strong>
+        <a href="mailto:nisabahjath@gmail.com">nisabahjath@gmail.com</a>
     </p>
-</div>
+</section>
+
+</main>
+
+<footer class="card">
+    <p>
+        © 2026 Bahjath Nisa | Cybersecurity Portfolio | SOC Analyst | Splunk SIEM
+    </p>
+</footer>
 
 </body>
 </html>
