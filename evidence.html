@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Evidence | Bahjath Nisa | Splunk SOC Lab</title>
+
+```
+<meta name="description" content="Project evidence for Bahjath Nisa's Splunk Enterprise SOC Detection and Incident Response Lab, including screenshots of detections, alerts, dashboards, and incident investigation.">
+
+<link rel="stylesheet" href="style.css">
+```
+
+</head>
+
+<body>
+
+<header class="hero">
+    <h1>Project Evidence</h1>
+
+```
+<p class="headline">
+    Splunk Enterprise SOC Detection & Incident Response Lab
+</p>
+
+<p class="hero-summary">
+    Evidence of log ingestion, SPL detection searches, scheduled alerts,
+    triggered alerts, SOC dashboard panels, and incident investigation workflow.
+</p>
+
+<div class="hero-links">
+    <a href="index.html">Back to Portfolio</a>
+    <a href="./detections.md" target="_blank">Detection Queries</a>
+    <a href="incident_report.pdf" target="_blank">Incident Report</a>
+    <a href="resume.pdf" target="_blank">Resume</a>
+</div>
+```
+
+</header>
+
+<main>
+
+<section class="card">
+    <h2>1. SOC Monitoring Dashboard</h2>
+
+```
+<p>
+    Splunk dashboard created to monitor authentication activity, detection summary,
+    PowerShell execution, Sysmon process activity, service creation, privileged group changes,
+    and top Windows Security event codes.
+</p>
+
+<img src="soc_dashboard.png" alt="Splunk SOC Monitoring Dashboard Screenshot">
+```
+
+</section>
+
+<section class="card">
+    <h2>2. Triggered Alerts</h2>
+
+```
+<p>
+    Triggered alerts page showing successful alert validation for SOC detection use cases.
+</p>
+
+<img src="triggered_alerts.png" alt="Splunk Triggered Alerts Screenshot">
+```
+
+</section>
+
+<section class="card">
+    <h2>3. Multiple Failed Login Detection</h2>
+
+```
+<p>
+    Detection based on Windows Security Event ID 4625 to identify multiple failed login attempts.
+</p>
+
+<img src="failed_login_detection.png" alt="Multiple Failed Login Detection Screenshot">
+```
+
+</section>
+
+<section class="card">
+    <h2>4. Successful Login After Failed Attempts</h2>
+
+```
+<p>
+    Correlation-style detection using Windows Security Event IDs 4624 and 4625
+    to identify successful login after repeated failures.
+</p>
+
+<img src="successful_login_detection.png" alt="Successful Login After Failed Attempts Screenshot">
+```
+
+</section>
+
+<section class="card">
+    <h2>5. PowerShell Execution Monitoring</h2>
+
+```
+<p>
+    Detection using Sysmon Event ID 1 to monitor PowerShell execution and command-line activity.
+</p>
+
+<img src="powershell_detection.png" alt="PowerShell Execution Monitoring Screenshot">
+```
+
+</section>
+
+<section class="card">
+    <h2>6. Sysmon Process Creation Monitoring</h2>
+
+```
+<p>
+    Process creation monitoring using Sysmon Event ID 1 to analyze Image,
+    CommandLine, User, and ParentImage fields.
+</p>
+
+<img src="sysmon_process_creation.png" alt="Sysmon Process Creation Monitoring Screenshot">
+```
+
+</section>
+
+<section class="card">
+    <h2>7. New Windows Service Installed</h2>
+
+```
+<p>
+    Detection based on Windows Event ID 7045 to identify new Windows service creation.
+</p>
+
+<img src="new_service_installed.png" alt="New Windows Service Installed Detection Screenshot">
+```
+
+</section>
+
+<section class="card">
+    <h2>8. User Added to Local Administrators Group</h2>
+
+```
+<p>
+    Detection based on Windows Security Event ID 4732 to identify local privileged group modification.
+</p>
+
+<img src="local_admin_group_change.png" alt="User Added to Local Administrators Group Detection Screenshot">
+```
+
+</section>
+
+<section class="card">
+    <h2>9. Incident Report Evidence</h2>
+
+```
+<p>
+    Sample SOC incident report prepared based on detected failed login activity.
+    The report includes observation, SPL query, investigation steps, impact, and recommendations.
+</p>
+
+<p>
+    <a href="incident_report.pdf" target="_blank">View Incident Report</a>
+</p>
+```
+
+</section>
+
+</main>
+
+<footer class="footer">
+    <p>© 2026 Bahjath Nisa | Splunk SOC Lab Evidence</p>
+</footer>
+
+</body>
+</html>
