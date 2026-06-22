@@ -7,11 +7,208 @@
     <title>Bahjath Nisa | SOC Analyst Portfolio | Splunk SIEM</title>
 
 ```
-<meta name="description" content="SOC Analyst portfolio of Bahjath Nisa showcasing a Splunk Enterprise SOC Detection and Incident Response Lab with Windows Security Logs, Sysmon, SPL detection rules, alerts, dashboards, MITRE ATT&CK mapping, and incident reporting.">
+<meta name="description" content="SOC Analyst portfolio of Bahjath Nisa featuring a Splunk Enterprise SOC Detection and Incident Response Lab with Windows Security Logs, Sysmon, SPL detections, alerts, dashboards, MITRE ATT&CK mapping, and incident reporting.">
 
 <meta name="keywords" content="SOC Analyst, Junior SOC Analyst, Splunk, SIEM, Cybersecurity, Sysmon, Windows Security Logs, Threat Detection, Incident Response, UAE SOC Analyst, SPL, MITRE ATT&CK, Security Monitoring">
 
-<link rel="stylesheet" href="style.css">
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #f4f7fb;
+        color: #1f2937;
+        line-height: 1.6;
+    }
+
+    a {
+        color: #0f62fe;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .hero {
+        background: linear-gradient(135deg, #0f172a, #1e3a8a);
+        color: #ffffff;
+        padding: 32px 20px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        margin: 0;
+        font-size: 34px;
+        letter-spacing: 0.5px;
+    }
+
+    .headline {
+        margin: 8px 0 10px;
+        font-size: 18px;
+        font-weight: 600;
+        color: #dbeafe;
+    }
+
+    .hero-summary {
+        max-width: 900px;
+        margin: 8px auto;
+        font-size: 15px;
+        color: #e5e7eb;
+    }
+
+    .hero-links {
+        margin-top: 18px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .hero-links a {
+        background: #ffffff;
+        color: #0f172a;
+        padding: 9px 14px;
+        border-radius: 6px;
+        font-size: 14px;
+    }
+
+    main {
+        max-width: 1120px;
+        margin: 24px auto;
+        padding: 0 16px;
+    }
+
+    .card {
+        background: #ffffff;
+        border-radius: 12px;
+        padding: 24px;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 14px rgba(15, 23, 42, 0.08);
+    }
+
+    h2 {
+        margin-top: 0;
+        color: #0f172a;
+        border-bottom: 2px solid #e5e7eb;
+        padding-bottom: 8px;
+    }
+
+    h3 {
+        color: #1e3a8a;
+        margin-bottom: 8px;
+    }
+
+    ul {
+        padding-left: 22px;
+    }
+
+    .table-wrapper {
+        overflow-x: auto;
+        margin-top: 14px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 14px;
+        background: #ffffff;
+    }
+
+    th {
+        background: #0f172a;
+        color: #ffffff;
+        text-align: left;
+        padding: 12px;
+        white-space: nowrap;
+    }
+
+    td {
+        border: 1px solid #e5e7eb;
+        padding: 12px;
+        vertical-align: top;
+    }
+
+    tr:nth-child(even) {
+        background: #f8fafc;
+    }
+
+    .badge {
+        display: inline-block;
+        background: #e0ecff;
+        color: #123a75;
+        padding: 7px 10px;
+        border-radius: 20px;
+        margin: 5px 5px 5px 0;
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 18px;
+        margin-top: 15px;
+    }
+
+    .gallery-item {
+        background: #f8fafc;
+        border: 1px solid #e5e7eb;
+        border-radius: 10px;
+        padding: 12px;
+    }
+
+    .gallery-item h3 {
+        font-size: 15px;
+        margin-top: 0;
+    }
+
+    .gallery-item img {
+        width: 100%;
+        border-radius: 8px;
+        border: 1px solid #d1d5db;
+        background: #ffffff;
+    }
+
+    .note {
+        background: #fff7ed;
+        border-left: 4px solid #f97316;
+        padding: 12px;
+        border-radius: 6px;
+        font-size: 14px;
+    }
+
+    .footer {
+        text-align: center;
+        padding: 18px;
+        background: #0f172a;
+        color: #dbeafe;
+        font-size: 14px;
+    }
+
+    @media (max-width: 700px) {
+        .hero h1 {
+            font-size: 28px;
+        }
+
+        .headline {
+            font-size: 16px;
+        }
+
+        .card {
+            padding: 18px;
+        }
+
+        th, td {
+            font-size: 13px;
+            padding: 9px;
+        }
+    }
+</style>
 ```
 
 </head>
@@ -27,9 +224,8 @@
 </p>
 
 <p class="hero-summary">
-    Cybersecurity portfolio focused on hands-on SOC monitoring, Splunk Enterprise SIEM,
-    Windows Security log analysis, Sysmon telemetry, SPL detection rules, alerting,
-    dashboarding, MITRE ATT&CK mapping, and incident investigation.
+    Hands-on cybersecurity portfolio focused on Splunk Enterprise SIEM, Windows Security log analysis,
+    Sysmon telemetry, SPL detection rules, alerting, dashboarding, MITRE ATT&CK mapping, and incident investigation.
 </p>
 
 <p class="hero-summary">
@@ -40,7 +236,6 @@
     <a href="resume.pdf" target="_blank">Download Resume</a>
     <a href="./detections.md" target="_blank">Detection Queries</a>
     <a href="incident_report.pdf" target="_blank">Incident Report</a>
-    <a href="evidence.html" target="_blank">Project Evidence</a>
     <a href="https://github.com/Nisaah" target="_blank">GitHub</a>
     <a href="https://www.linkedin.com/in/bahjath-nisa-023730265" target="_blank">LinkedIn</a>
 </div>
@@ -55,7 +250,7 @@
 
 ```
 <p>
-    Cybersecurity enthusiast with hands-on experience in SOC monitoring,
+    Cybersecurity enthusiast with practical hands-on experience in SOC monitoring,
     Splunk Enterprise SIEM, Windows Security Event Logs, Sysmon telemetry,
     SPL detection searches, alert configuration, dashboard creation, and incident reporting.
 </p>
@@ -74,9 +269,9 @@
 ```
 <p>
     Built a home-based SOC monitoring lab using Splunk Enterprise to collect,
-    analyze, detect, and investigate security events from Windows Security Logs
-    and Sysmon logs. The project simulates practical SOC activities such as log ingestion,
-    detection engineering, alert validation, dashboard monitoring, and incident documentation.
+    analyze, detect, and investigate security events from Windows Security Logs and Sysmon logs.
+    The project simulates practical SOC activities such as log ingestion, detection engineering,
+    alert validation, dashboard monitoring, and incident documentation.
 </p>
 
 <h3>Project Objectives</h3>
@@ -131,54 +326,56 @@
     alerting, and investigation skills.
 </p>
 
-<table>
-    <thead>
-        <tr>
-            <th>Detection ID</th>
-            <th>Detection Name</th>
-            <th>Data Source</th>
-            <th>Purpose</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>SOC-LAB-001</td>
-            <td>Multiple Failed Login Attempts</td>
-            <td>Windows Security Event ID 4625</td>
-            <td>Detect possible brute-force or password guessing activity.</td>
-        </tr>
-        <tr>
-            <td>SOC-LAB-002</td>
-            <td>Successful Login After Failed Attempts</td>
-            <td>Windows Security Event IDs 4624 and 4625</td>
-            <td>Identify possible successful login after multiple failed attempts.</td>
-        </tr>
-        <tr>
-            <td>SOC-LAB-003</td>
-            <td>PowerShell Execution Monitoring</td>
-            <td>Sysmon Event ID 1</td>
-            <td>Monitor PowerShell execution and command-line activity.</td>
-        </tr>
-        <tr>
-            <td>SOC-LAB-004</td>
-            <td>Sysmon Process Creation Monitoring</td>
-            <td>Sysmon Event ID 1</td>
-            <td>Analyze process execution, command line, user, and parent-child relationships.</td>
-        </tr>
-        <tr>
-            <td>SOC-LAB-005</td>
-            <td>New Windows Service Installed</td>
-            <td>Windows Event ID 7045</td>
-            <td>Detect new Windows service creation that may indicate persistence.</td>
-        </tr>
-        <tr>
-            <td>SOC-LAB-006</td>
-            <td>User Added to Local Administrators Group</td>
-            <td>Windows Security Event ID 4732</td>
-            <td>Detect privileged group modification and possible privilege escalation.</td>
-        </tr>
-    </tbody>
-</table>
+<div class="table-wrapper">
+    <table>
+        <thead>
+            <tr>
+                <th>Detection ID</th>
+                <th>Detection Name</th>
+                <th>Data Source</th>
+                <th>Purpose</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>SOC-LAB-001</td>
+                <td>Multiple Failed Login Attempts</td>
+                <td>Windows Security Event ID 4625</td>
+                <td>Detect possible brute-force or password guessing activity.</td>
+            </tr>
+            <tr>
+                <td>SOC-LAB-002</td>
+                <td>Successful Login After Failed Attempts</td>
+                <td>Windows Security Event IDs 4624 and 4625</td>
+                <td>Identify possible successful login after multiple failed attempts.</td>
+            </tr>
+            <tr>
+                <td>SOC-LAB-003</td>
+                <td>PowerShell Execution Monitoring</td>
+                <td>Sysmon Event ID 1</td>
+                <td>Monitor PowerShell execution and command-line activity.</td>
+            </tr>
+            <tr>
+                <td>SOC-LAB-004</td>
+                <td>Sysmon Process Creation Monitoring</td>
+                <td>Sysmon Event ID 1</td>
+                <td>Analyze process execution, command line, user, and parent-child relationships.</td>
+            </tr>
+            <tr>
+                <td>SOC-LAB-005</td>
+                <td>New Windows Service Installed</td>
+                <td>Windows Event ID 7045</td>
+                <td>Detect new Windows service creation that may indicate persistence.</td>
+            </tr>
+            <tr>
+                <td>SOC-LAB-006</td>
+                <td>User Added to Local Administrators Group</td>
+                <td>Windows Security Event ID 4732</td>
+                <td>Detect privileged group modification and possible privilege escalation.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
 <p>
     <a href="./detections.md" target="_blank">View Full SPL Detection Queries</a>
@@ -192,52 +389,54 @@
 
 ```
 <p>
-    Detection rules were mapped to MITRE ATT&CK techniques to show understanding of
-    attacker behavior and SOC investigation context.
+    Detection rules were mapped to MITRE ATT&CK techniques to show understanding of attacker behavior
+    and SOC investigation context.
 </p>
 
-<table>
-    <thead>
-        <tr>
-            <th>Technique ID</th>
-            <th>Technique Name</th>
-            <th>Related Detection</th>
-            <th>Short Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>T1110</td>
-            <td>Brute Force</td>
-            <td>Multiple Failed Login Attempts</td>
-            <td>Detects repeated failed authentication attempts that may indicate password guessing.</td>
-        </tr>
-        <tr>
-            <td>T1078</td>
-            <td>Valid Accounts</td>
-            <td>Successful Login After Failed Attempts</td>
-            <td>Identifies possible valid account usage after repeated failed login attempts.</td>
-        </tr>
-        <tr>
-            <td>T1059.001</td>
-            <td>PowerShell</td>
-            <td>PowerShell Execution Monitoring</td>
-            <td>Monitors PowerShell activity that may be used for command execution or discovery.</td>
-        </tr>
-        <tr>
-            <td>T1543.003</td>
-            <td>Windows Service</td>
-            <td>New Windows Service Installed</td>
-            <td>Detects new service creation that may be used for persistence.</td>
-        </tr>
-        <tr>
-            <td>T1098</td>
-            <td>Account Manipulation</td>
-            <td>User Added to Local Administrators Group</td>
-            <td>Detects privileged group changes that may indicate privilege escalation.</td>
-        </tr>
-    </tbody>
-</table>
+<div class="table-wrapper">
+    <table>
+        <thead>
+            <tr>
+                <th>Technique ID</th>
+                <th>Technique Name</th>
+                <th>Related Detection</th>
+                <th>Short Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>T1110</td>
+                <td>Brute Force</td>
+                <td>Multiple Failed Login Attempts</td>
+                <td>Detects repeated failed authentication attempts that may indicate password guessing.</td>
+            </tr>
+            <tr>
+                <td>T1078</td>
+                <td>Valid Accounts</td>
+                <td>Successful Login After Failed Attempts</td>
+                <td>Identifies possible valid account usage after repeated failed login attempts.</td>
+            </tr>
+            <tr>
+                <td>T1059.001</td>
+                <td>PowerShell</td>
+                <td>PowerShell Execution Monitoring</td>
+                <td>Monitors PowerShell activity that may be used for command execution or discovery.</td>
+            </tr>
+            <tr>
+                <td>T1543.003</td>
+                <td>Windows Service</td>
+                <td>New Windows Service Installed</td>
+                <td>Detects new service creation that may be used for persistence.</td>
+            </tr>
+            <tr>
+                <td>T1098</td>
+                <td>Account Manipulation</td>
+                <td>User Added to Local Administrators Group</td>
+                <td>Detects privileged group changes that may indicate privilege escalation.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 ```
 
 </section>
@@ -296,25 +495,58 @@
 </section>
 
 <section class="card">
-    <h2>Project Evidence</h2>
+    <h2>Project Evidence Gallery</h2>
 
 ```
 <p>
-    Screenshots were captured to demonstrate log ingestion, SPL detection searches,
-    triggered alerts, dashboard panels, and incident investigation workflow.
+    The screenshots below provide evidence of Splunk log ingestion, SPL detection searches,
+    triggered alerts, SOC dashboard panels, and incident investigation workflow.
 </p>
 
-<h3>SOC Monitoring Dashboard</h3>
-<img src="soc_dashboard.png" alt="Splunk SOC Monitoring Dashboard Screenshot">
+<div class="gallery-grid">
+    <div class="gallery-item">
+        <h3>SOC Monitoring Dashboard</h3>
+        <img src="soc_dashboard.png" alt="Splunk SOC Monitoring Dashboard Screenshot">
+    </div>
 
-<h3>Triggered Alerts</h3>
-<img src="triggered_alerts.png" alt="Splunk Triggered Alerts Screenshot">
+    <div class="gallery-item">
+        <h3>Triggered Alerts</h3>
+        <img src="triggered_alerts.png" alt="Splunk Triggered Alerts Screenshot">
+    </div>
 
-<h3>PowerShell Execution Monitoring</h3>
-<img src="powershell_detection.png" alt="PowerShell Execution Monitoring in Splunk">
+    <div class="gallery-item">
+        <h3>Multiple Failed Login Detection</h3>
+        <img src="failed_login_detection.png" alt="Multiple Failed Login Detection Screenshot">
+    </div>
 
-<p>
-    <a href="evidence.html" target="_blank">View Full Project Evidence</a>
+    <div class="gallery-item">
+        <h3>Successful Login After Failed Attempts</h3>
+        <img src="successful_login_detection.png" alt="Successful Login After Failed Attempts Screenshot">
+    </div>
+
+    <div class="gallery-item">
+        <h3>PowerShell Execution Monitoring</h3>
+        <img src="powershell_detection.png" alt="PowerShell Execution Monitoring Screenshot">
+    </div>
+
+    <div class="gallery-item">
+        <h3>Sysmon Process Creation Monitoring</h3>
+        <img src="sysmon_process_creation.png" alt="Sysmon Process Creation Monitoring Screenshot">
+    </div>
+
+    <div class="gallery-item">
+        <h3>New Windows Service Installed</h3>
+        <img src="new_service_installed.png" alt="New Windows Service Installed Detection Screenshot">
+    </div>
+
+    <div class="gallery-item">
+        <h3>User Added to Local Administrators Group</h3>
+        <img src="local_admin_group_change.png" alt="User Added to Local Administrators Group Detection Screenshot">
+    </div>
+</div>
+
+<p class="note">
+    If any screenshot is not available yet, remove that image block temporarily to avoid broken images on the portfolio.
 </p>
 ```
 
